@@ -1,6 +1,7 @@
 function checkAnswer() {
     correctAnswer = "4";
-    userAnswer = document.querySelector('quiz').value;
+    checked = document.querySelector('quiz');
+    userAnswer = checked.value;
 
     if (userAnswer == correctAnswer){
         document.getElementById('feedback').textContent = "Correct! Well done.";
